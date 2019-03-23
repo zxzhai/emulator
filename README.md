@@ -49,6 +49,8 @@ You can import these three scripts to make predictions of galaxy correlation fun
 
 gp_cos_hod_9bins_prediction.py
 
+All the data for training and testing can be found from the website of Aemulus project.
+
 --------------
 
 This emulator is built on George, version 0.2.1, 
