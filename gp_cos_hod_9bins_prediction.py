@@ -6,7 +6,6 @@ import sys
 from gp_training import *
 from time import time
 import scipy.interpolate
-import emcee
 import gp_wp_cos_hod_9bins_init2 as gw
 import gp_mono_cos_hod_9bins_init2 as gm
 import gp_quad_cos_hod_9bins_init2 as gq

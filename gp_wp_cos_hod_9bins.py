@@ -52,7 +52,7 @@ for j in range(9):
         for HID in HH[CID]:
             HID = int(HID)
             
-            d = np.loadtxt("training/wp_results/wp_cosmo_"+str(CID)+"_HOD_"+str(HID)+"_test_0.dat")
+            d = np.loadtxt("training/wp_results/wp_cosmo_"+str(CID)+"_HOD_"+str(HID)+".dat")
             
             rr[ss,0:7]=xc[CID, :]
             rr[ss,7:15]=x[HID, :]

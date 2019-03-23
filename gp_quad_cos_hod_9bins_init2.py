@@ -24,7 +24,7 @@ HH  = HH.reshape(40, 50)
 rr = np.empty((HH.shape[1]*len(CC), x.shape[1]+xc.shape[1]))
 YY = np.empty((9, HH.shape[1]*len(CC)))
 
-pp = np.loadtxt("RSD_multiple_quad_9bins_pp.dat"")
+pp = np.loadtxt("RSD_multiple_quad_9bins_pp.dat")
 
 HODLR = False
 ##################   find the mean of the data  #############
@@ -34,7 +34,7 @@ s2 = 0
 for CID in CC:
     for HID in HH[CID]:
         HID = int(HID)
-        d = np.loadtxt("training/RSD_results/RSD_cosmo_"+str(CID)+"_HOD_"+str(HID)+"_test_0.dat")
+        d = np.loadtxt("training/RSD_results/RSD_cosmo_"+str(CID)+"_HOD_"+str(HID)+".dat")
 
         YY[:,s2] = d[:,2]*(d[:,0]**2.0)
         s2 = s2+1
@@ -43,7 +43,7 @@ Ymean = np.mean(YY, axis=1)
 
 ##################  found the mean of the data ################
 
-GP_error = np.loadtxt("training/wp_results/Cosmo_err.dat")
+GP_error = np.loadtxt("training/RSD_results/Cosmo_err.dat")
 
 GP_err = abs(GP_error[:,1])
 
@@ -59,7 +59,7 @@ for j in range(9):
         for HID in HH[CID]:
             HID = int(HID)
             
-            d = np.loadtxt("training/RSD_results/RSD_cosmo_"+str(CID)+"_HOD_"+str(HID)+"_test_0.dat")
+            d = np.loadtxt("training/RSD_results/RSD_cosmo_"+str(CID)+"_HOD_"+str(HID)+".dat")
 
             rr[ss,0:7]=xc[CID, :]
             rr[ss,7:15]=x[HID, :]
