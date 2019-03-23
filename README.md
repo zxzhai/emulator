@@ -57,6 +57,8 @@ You can import these three scripts to make predictions of galaxy correlation fun
 
 gp_cos_hod_9bins_prediction.py
 
+The initialization of this file may take a few seconds, depending on machine.
+
 All the data for training and testing can be found from the website of Aemulus project.
 
 --------------
