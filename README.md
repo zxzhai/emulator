@@ -66,3 +66,7 @@ This emulator is built on George, version 0.2.1,
 https://github.com/dfm/george
 
 If you use the different version, the format of the kernel can be different and cause error.
+
+---------------
+
+If you have any questions or suggestions, let me know
