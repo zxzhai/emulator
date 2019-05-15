@@ -59,9 +59,10 @@ gp_cos_hod_9bins_prediction.py
 
 The initialization of this file may take a few seconds, depending on machine.
 
-All the data for training and testing can be found from the website of Aemulus project or the link below to google drive:
+All the data for training and testing are saved in the file:
 
-https://drive.google.com/file/d/18wzOGIzT1fGhGIkC2igZqsnm2O8apHeB/view?usp=sharing
+Archive.zip
+
 
 --------------
 
